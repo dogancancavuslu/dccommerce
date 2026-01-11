@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-[#1A2B4A] mb-1">Location</h4>
-                  <p className="text-[#5B6C7D]">Marcham, Abingdon, England, UK</p>
+                  <p className="text-[#5B6C7D]">8/A, Greenwood Grove, DC Commerce Office, Marcham, Abingdon, England, OX13 6FR</p>
                 </div>
               </div>
 

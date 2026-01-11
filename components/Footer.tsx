@@ -59,8 +59,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4 text-[#5B6C7D]">
-              <p>Marcham, Abingdon</p>
-              <p>England, UK</p>
+              <p>8/A, Greenwood Grove</p>
+              <p>DC Commerce Office, Marcham</p>
+              <p>Abingdon, England, OX13 6FR</p>
               <p>+44 7347 246242</p>
               <p>hello@dccommerce.co.uk</p>
             </div>
