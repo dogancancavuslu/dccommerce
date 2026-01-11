@@ -15,9 +15,12 @@ const Contact: React.FC = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formsubmit.co/hello@dccommerce.co.uk', {
+      const response = await fetch('https://formspree.io/f/xgoowgje', {
         method: 'POST',
         body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
 
       if (response.ok) {
@@ -107,11 +110,6 @@ const Contact: React.FC = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* FormSubmit configuration */}
-                <input type="hidden" name="_subject" value="New Contact Form Submission - DC Commerce" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-[#1A2B4A] mb-2">Your Name</label>
