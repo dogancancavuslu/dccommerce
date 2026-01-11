@@ -1,37 +1,47 @@
 
 import React from 'react';
-import { Server, ShoppingCart, Globe, Database, ShieldCheck, Activity } from 'lucide-react';
+import { Code, ShoppingCart, Package, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   const services = [
     {
-      title: 'Enterprise SaaS Solutions',
-      icon: <Server className="w-12 h-12 text-[#2E7DD2]" />,
+      title: 'Software Development',
+      icon: <Code className="w-12 h-12 text-[#2E7DD2]" />,
+      description: 'We build custom software solutions tailored to your business needs. From web applications to mobile apps, we turn your ideas into reality.',
       details: [
-        'Custom cloud-native architecture',
-        'Scalable multi-tenant infrastructures',
-        'Real-time data synchronization across regions',
-        'Advanced API management and integration'
+        'Custom web applications',
+        'Mobile app development',
+        'API development & integrations',
+        'UI/UX design',
+        'Cloud solutions',
+        'Ongoing maintenance & support'
       ]
     },
     {
-      title: 'Global E-commerce Systems',
+      title: 'E-commerce Solutions',
       icon: <ShoppingCart className="w-12 h-12 text-[#2E7DD2]" />,
+      description: 'Launch and scale your online store with our e-commerce expertise. We help you sell more, reach further, and grow faster.',
       details: [
-        'Multi-currency and multi-language support',
-        'Automated international tax and compliance logic',
-        'High-volume transaction processing',
-        'Unified inventory management for global stock'
+        'E-commerce platform setup',
+        'Custom online stores',
+        'Payment gateway integration',
+        'Inventory management',
+        'Multi-channel selling',
+        'Performance optimization'
       ]
     },
     {
-      title: 'Trade Intelligence Platforms',
-      icon: <Globe className="w-12 h-12 text-[#2E7DD2]" />,
+      title: 'Import & Export',
+      icon: <Package className="w-12 h-12 text-[#2E7DD2]" />,
+      description: 'Navigate international trade with confidence. We facilitate import and export operations, connecting you to global markets.',
       details: [
-        'International trade route optimization',
-        'Customs and regulatory data automation',
-        'Predictive supply chain analytics',
-        'Global market penetration intelligence'
+        'Supplier sourcing',
+        'International logistics',
+        'Trade documentation',
+        'Market research',
+        'Customs guidance',
+        'Business matchmaking'
       ]
     }
   ];
@@ -40,22 +50,23 @@ const Services: React.FC = () => {
     <div className="pt-32 pb-24 fade-in bg-white">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="max-w-3xl mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1A2B4A] mb-8">Our Service Portfolio</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1A2B4A] mb-8">Our Services</h1>
           <p className="text-xl text-[#5B6C7D] leading-relaxed">
-            DC Commerce provides the technical backbone for modern international enterprises. Our solutions are designed for security, scalability, and technical excellence.
+            We focus on three areas where we can make the biggest impact for your business. Simple, focused, effective.
           </p>
         </div>
 
         <div className="space-y-16 mb-24">
           {services.map((service, idx) => (
-            <div key={idx} className="bg-[#f8fafc] border border-[#E8ECEF] p-12 rounded-[4px] shadow-sm hover:shadow-md transition-shadow">
+            <div key={idx} className="bg-[#f8fafc] border border-[#E8ECEF] p-12 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <div className="flex flex-col lg:flex-row gap-12">
                 <div className="lg:w-1/3">
                   <div className="mb-6">{service.icon}</div>
                   <h2 className="text-3xl font-bold text-[#1A2B4A] mb-4">{service.title}</h2>
+                  <p className="text-[#5B6C7D] leading-relaxed">{service.description}</p>
                 </div>
                 <div className="lg:w-2/3">
-                  <h3 className="text-lg font-bold text-[#1A2B4A] mb-6 border-b border-[#E8ECEF] pb-2">Core Capabilities</h3>
+                  <h3 className="text-lg font-bold text-[#1A2B4A] mb-6 border-b border-[#E8ECEF] pb-2">What We Offer</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {service.details.map((detail, dIdx) => (
                       <div key={dIdx} className="flex items-start gap-3">
@@ -70,25 +81,17 @@ const Services: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-[#E8ECEF] p-16 rounded-[4px] border border-[#1A2B4A]/5">
-          <h2 className="text-2xl font-bold text-[#1A2B4A] mb-12 text-center">Technical Infrastructure Standards</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-[#1A2B4A]">
-            <div className="text-center p-6">
-              <Database className="w-10 h-10 mb-4 mx-auto" />
-              <h4 className="font-bold mb-2">Data Sovereignty</h4>
-              <p className="text-sm text-[#5B6C7D]">Compliant with local data residency requirements globally.</p>
-            </div>
-            <div className="text-center p-6">
-              <ShieldCheck className="w-10 h-10 mb-4 mx-auto" />
-              <h4 className="font-bold mb-2">Zero Trust Security</h4>
-              <p className="text-sm text-[#5B6C7D]">Implementing the highest standards of access control.</p>
-            </div>
-            <div className="text-center p-6">
-              <Activity className="w-10 h-10 mb-4 mx-auto" />
-              <h4 className="font-bold mb-2">99.99% Availability</h4>
-              <p className="text-sm text-[#5B6C7D]">Engineered for mission-critical uptime requirements.</p>
-            </div>
-          </div>
+        <div className="bg-[#1A2B4A] p-16 rounded-lg text-white text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">Have a Project in Mind?</h2>
+          <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+            We'd love to hear about it. Whether you have a clear vision or just an idea, let's talk about how we can help bring it to life.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 bg-white text-[#1A2B4A] px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
+          >
+            Start a Conversation <ArrowRight size={20} />
+          </Link>
         </div>
       </div>
     </div>

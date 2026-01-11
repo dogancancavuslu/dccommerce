@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NAV_ITEMS } from '../constants';
-import { Linkedin, Twitter, Phone } from 'lucide-react';
+import { Linkedin, Twitter, Mail } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
@@ -16,21 +16,24 @@ const Footer: React.FC = () => {
               <Logo />
             </div>
             <p className="text-[#5B6C7D] leading-relaxed mb-6">
-              Leading the digital transformation of international commerce through enterprise-grade technology and expertise.
+              A fresh startup helping businesses grow through software, e-commerce, and international trade.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="p-2 border border-[#E8ECEF] hover:bg-[#E8ECEF] transition-colors rounded-[4px] text-[#1A2B4A]">
+              <a href="#" className="p-2 border border-[#E8ECEF] hover:bg-[#2E7DD2] hover:text-white hover:border-[#2E7DD2] transition-colors rounded-lg text-[#1A2B4A]">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="p-2 border border-[#E8ECEF] hover:bg-[#E8ECEF] transition-colors rounded-[4px] text-[#1A2B4A]">
+              <a href="#" className="p-2 border border-[#E8ECEF] hover:bg-[#2E7DD2] hover:text-white hover:border-[#2E7DD2] transition-colors rounded-lg text-[#1A2B4A]">
                 <Twitter size={20} />
+              </a>
+              <a href="mailto:hello@dccommerce.co.uk" className="p-2 border border-[#E8ECEF] hover:bg-[#2E7DD2] hover:text-white hover:border-[#2E7DD2] transition-colors rounded-lg text-[#1A2B4A]">
+                <Mail size={20} />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Company</h4>
+            <h4 className="font-bold text-lg mb-6">Navigate</h4>
             <ul className="space-y-4">
               {NAV_ITEMS.map(item => (
                 <li key={item.path}>
@@ -46,31 +49,29 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-lg mb-6">Services</h4>
             <ul className="space-y-4 text-[#5B6C7D]">
-              <li><Link to="/services" className="hover:text-[#2E7DD2]">SaaS Platform</Link></li>
-              <li><Link to="/services" className="hover:text-[#2E7DD2]">Digital Commerce</Link></li>
-              <li><Link to="/services" className="hover:text-[#2E7DD2]">Trade Intelligence</Link></li>
-              <li><Link to="/services" className="hover:text-[#2E7DD2]">Managed Solutions</Link></li>
+              <li><Link to="/services" className="hover:text-[#2E7DD2]">Software Development</Link></li>
+              <li><Link to="/services" className="hover:text-[#2E7DD2]">E-commerce Solutions</Link></li>
+              <li><Link to="/services" className="hover:text-[#2E7DD2]">Import & Export</Link></li>
             </ul>
           </div>
 
-          {/* Contact & Legal */}
+          {/* Contact */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Contact</h4>
+            <h4 className="font-bold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4 text-[#5B6C7D]">
-              <p>8/A, Greenwood Grove, Dc Commerce Office, Marcham, Abingdon, England, OX13 6F</p>
-              <p className="flex items-center gap-2"><Phone size={14} /> +44 7347 246242</p>
-              <p>Hours: Mon - Fri, 09:00 - 18:00 GMT</p>
-              <p>Email: contact@dccommerce.com</p>
+              <p>Marcham, Abingdon</p>
+              <p>England, UK</p>
+              <p>+44 7347 246242</p>
+              <p>hello@dccommerce.co.uk</p>
             </div>
           </div>
         </div>
 
         <div className="pt-8 border-t border-[#E8ECEF] flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#5B6C7D]">
-          <p>© {new Date().getFullYear()} DC Commerce Technologies Ltd. Registered in England & Wales: 12345678.</p>
+          <p>© {new Date().getFullYear()} DC Commerce. All rights reserved.</p>
           <div className="flex space-x-6">
             <Link to="#" className="hover:text-[#1A2B4A]">Privacy Policy</Link>
             <Link to="#" className="hover:text-[#1A2B4A]">Terms of Service</Link>
-            <Link to="#" className="hover:text-[#1A2B4A]">Cookies Policy</Link>
           </div>
         </div>
       </div>
