@@ -5,10 +5,30 @@ import { Mail, MapPin, Clock, Phone, MessageCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formsubmit.co/hello@dccommerce.co.uk', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -87,11 +107,17 @@ const Contact: React.FC = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* FormSubmit configuration */}
+                <input type="hidden" name="_subject" value="New Contact Form Submission - DC Commerce" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-[#1A2B4A] mb-2">Your Name</label>
                     <input
                       type="text"
+                      name="name"
                       required
                       className="w-full px-4 py-3 border border-[#E8ECEF] rounded-lg focus:outline-none focus:border-[#2E7DD2] text-[#1A2B4A]"
                       placeholder="John Doe"
@@ -101,6 +127,7 @@ const Contact: React.FC = () => {
                     <label className="block text-sm font-semibold text-[#1A2B4A] mb-2">Email</label>
                     <input
                       type="email"
+                      name="email"
                       required
                       className="w-full px-4 py-3 border border-[#E8ECEF] rounded-lg focus:outline-none focus:border-[#2E7DD2] text-[#1A2B4A]"
                       placeholder="john@example.com"
@@ -109,7 +136,10 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-[#1A2B4A] mb-2">What's This About?</label>
-                  <select className="w-full px-4 py-3 border border-[#E8ECEF] rounded-lg focus:outline-none focus:border-[#2E7DD2] text-[#1A2B4A] bg-white">
+                  <select
+                    name="subject"
+                    className="w-full px-4 py-3 border border-[#E8ECEF] rounded-lg focus:outline-none focus:border-[#2E7DD2] text-[#1A2B4A] bg-white"
+                  >
                     <option>Software Development</option>
                     <option>E-commerce Project</option>
                     <option>Import / Export</option>
@@ -120,13 +150,16 @@ const Contact: React.FC = () => {
                 <div>
                   <label className="block text-sm font-semibold text-[#1A2B4A] mb-2">Your Message</label>
                   <textarea
+                    name="message"
                     required
                     rows={5}
                     className="w-full px-4 py-3 border border-[#E8ECEF] rounded-lg focus:outline-none focus:border-[#2E7DD2] text-[#1A2B4A]"
                     placeholder="Tell us about your project or idea..."
                   ></textarea>
                 </div>
-                <Button type="submit" className="w-full">Send Message</Button>
+                <Button type="submit" className="w-full" disabled={loading}>
+                  {loading ? 'Sending...' : 'Send Message'}
+                </Button>
                 <p className="text-center text-sm text-[#5B6C7D]">
                   We respect your privacy. No spam, ever.
                 </p>
