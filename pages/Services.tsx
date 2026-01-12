@@ -8,7 +8,7 @@ const Services: React.FC = () => {
     {
       title: 'Software Development',
       icon: <Code className="w-12 h-12 text-[#2E7DD2]" />,
-      description: 'We build custom software solutions tailored to your business needs. From web applications to mobile apps, we turn your ideas into reality.',
+      description: 'We develop SaaS products and custom software solutions. Our finance analytics platform Tralyz is actively in use, with Gifty coming soon.',
       details: [
         'Custom web applications',
         'Mobile app development',
@@ -21,7 +21,7 @@ const Services: React.FC = () => {
     {
       title: 'E-commerce Solutions',
       icon: <ShoppingCart className="w-12 h-12 text-[#2E7DD2]" />,
-      description: 'Launch and scale your online store with our e-commerce expertise. We help you sell more, reach further, and grow faster.',
+      description: 'We run e-commerce operations globally with warehousing solutions in multiple countries. We also help businesses set up and scale their online presence.',
       details: [
         'E-commerce platform setup',
         'Custom online stores',
@@ -34,7 +34,7 @@ const Services: React.FC = () => {
     {
       title: 'Import & Export',
       icon: <Package className="w-12 h-12 text-[#2E7DD2]" />,
-      description: 'Navigate international trade with confidence. We facilitate import and export operations, connecting you to global markets.',
+      description: 'We provide consulting for international trade, helping businesses navigate cross-border operations and expand into new markets.',
       details: [
         'Supplier sourcing',
         'International logistics',

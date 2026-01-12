@@ -22,9 +22,9 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const STATS: StatItem[] = [
   { label: 'Founded', value: '2024' },
-  { label: 'Team Members', value: '5+' },
+  { label: 'Countries', value: '5+' },
   { label: 'Projects Delivered', value: '10+' },
-  { label: 'Happy Clients', value: '15+' }
+  { label: 'Clients Served', value: '15+' }
 ];
 
 export const DIFFERENTIATORS = [
@@ -53,17 +53,17 @@ export const DIFFERENTIATORS = [
 export const SERVICE_HIGHLIGHTS = [
   {
     title: 'Software Development',
-    description: 'Custom web and mobile applications built with modern technologies to power your business.',
+    description: 'SaaS products and custom software solutions. Our Tralyz finance platform is live, with Gifty coming soon.',
     icon: <Code className="w-10 h-10 text-[#2E7DD2]" />
   },
   {
     title: 'E-commerce Solutions',
-    description: 'End-to-end e-commerce platforms that help you sell globally and scale efficiently.',
+    description: 'Global e-commerce operations with warehousing infrastructure in multiple countries.',
     icon: <ShoppingCart className="w-10 h-10 text-[#2E7DD2]" />
   },
   {
     title: 'Import & Export',
-    description: 'International trade services connecting markets and facilitating global commerce.',
+    description: 'Consulting services for international trade and cross-border business expansion.',
     icon: <Package className="w-10 h-10 text-[#2E7DD2]" />
   }
 ];

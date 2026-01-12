@@ -25,13 +25,13 @@ const Home: React.FC = () => {
         <div className="relative z-20 max-w-[1200px] mx-auto px-6 text-center md:text-left">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#2E7DD2]/10 text-[#2E7DD2] px-4 py-2 rounded-full text-sm font-semibold mb-6">
-              <Zap size={16} /> Fresh Ideas, Bold Solutions
+              <Zap size={16} /> Software, Trade & E-commerce
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-[#1A2B4A] leading-tight mb-6">
               Your Partner in Software, Trade & E-commerce
             </h1>
             <p className="text-xl text-[#5B6C7D] mb-10 leading-relaxed max-w-2xl">
-              We're a young startup helping businesses grow through custom software development, international trade, and e-commerce solutions.
+              We develop SaaS products, run e-commerce operations globally, and provide consulting for international trade.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button onClick={() => navigate('/contact')}>
@@ -50,9 +50,9 @@ const Home: React.FC = () => {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#1A2B4A] mb-6">We're Just Getting Started</h2>
+              <h2 className="text-3xl font-bold text-[#1A2B4A] mb-6">What We Do</h2>
               <p className="text-lg text-[#5B6C7D] leading-relaxed mb-8">
-                DC Commerce is a fresh startup based in the UK, driven by passion and expertise. We specialize in software development, import-export operations, and e-commerce solutions. Dedicated team brings agility and innovation to every project.
+                DC Commerce is a UK-based company specializing in software development, e-commerce, and international trade. We develop SaaS products like Tralyz (finance analytics) and Gifty (coming soon), operate e-commerce across multiple countries with our own warehousing solutions, and provide consulting for businesses expanding into global markets.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 {STATS.map((stat, index) => (
@@ -104,7 +104,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
               <h2 className="text-3xl font-bold text-[#1A2B4A] mb-4">Why Work With Us?</h2>
-              <p className="text-[#5B6C7D] text-lg">We're small, but that's our superpower. Direct communication, fast execution, and genuine care for your success.</p>
+              <p className="text-[#5B6C7D] text-lg">Direct communication, fast execution, and genuine care for your success.</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
