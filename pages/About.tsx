@@ -11,10 +11,10 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-24">
           <div className="lg:col-span-2">
             <p className="text-xl text-[#5B6C7D] leading-relaxed mb-8">
-              DC Commerce was founded in 2024 with a clear goal: to bring practical solutions in software, e-commerce, and international trade.
+              DC Commerce was founded in 2025 with a clear goal: to bring practical solutions in software, e-commerce, and international trade.
             </p>
             <p className="text-lg text-[#5B6C7D] leading-relaxed mb-8">
-              Based in the UK, we develop SaaS products including Tralyz (a finance analytics platform) and Gifty (coming soon). We also run e-commerce operations across multiple countries with our own warehousing and logistics infrastructure.
+              Based in the UK and Turkey, we develop SaaS products including Tralyz (a finance analytics platform) and Gifty (coming soon). We also run e-commerce operations across multiple countries with our own warehousing and logistics infrastructure.
             </p>
             <p className="text-lg text-[#5B6C7D] leading-relaxed mb-8">
               Beyond our own products and operations, we provide consulting services for businesses looking to expand into international markets, helping them navigate cross-border trade.
@@ -49,12 +49,12 @@ const About: React.FC = () => {
               <h3 className="text-2xl font-bold mb-6">Quick Facts</h3>
               <div className="space-y-8">
                 <div>
-                  <div className="text-4xl font-bold text-[#2E7DD2]">2024</div>
+                  <div className="text-4xl font-bold text-[#2E7DD2]">2025</div>
                   <div className="text-sm text-[#5B6C7D]">Year Founded</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-[#2E7DD2]">UK</div>
-                  <div className="text-sm text-[#5B6C7D]">Based in England</div>
+                  <div className="text-4xl font-bold text-[#2E7DD2]">UK & TR</div>
+                  <div className="text-sm text-[#5B6C7D]">Dual Headquarters</div>
                 </div>
                 <div>
                   <div className="text-4xl font-bold text-[#2E7DD2]">3</div>

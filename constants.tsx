@@ -21,7 +21,7 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const STATS: StatItem[] = [
-  { label: 'Founded', value: '2024' },
+  { label: 'Founded', value: '2025' },
   { label: 'Countries', value: '5+' },
   { label: 'Projects Delivered', value: '10+' },
   { label: 'Clients Served', value: '15+' }

@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-[#1A2B4A] mb-6">What We Do</h2>
               <p className="text-lg text-[#5B6C7D] leading-relaxed mb-8">
-                DC Commerce is a UK-based company specializing in software development, e-commerce, and international trade. We develop SaaS products like Tralyz (finance analytics) and Gifty (coming soon), operate e-commerce across multiple countries with our own warehousing solutions, and provide consulting for businesses expanding into global markets.
+                DC Commerce is a company based in the UK and Turkey, specializing in software development, e-commerce, and international trade. We develop SaaS products like Tralyz (finance analytics) and Gifty (coming soon), operate e-commerce across multiple countries with our own warehousing solutions, and provide consulting for businesses expanding into global markets.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 {STATS.map((stat, index) => (
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
                 className="rounded-lg shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-[#2E7DD2] text-white p-6 rounded-lg hidden md:block">
-                <p className="text-sm font-semibold mb-1">🇬🇧 UK Based</p>
+                <p className="text-sm font-semibold mb-1">🇬🇧 UK & 🇹🇷 Turkey</p>
                 <p className="text-lg font-bold">Global Vision</p>
               </div>
             </div>
