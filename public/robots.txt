@@ -1,0 +1,9 @@
+# DC Commerce - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dccommerce.co.uk/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

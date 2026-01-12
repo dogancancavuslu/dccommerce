@@ -1,31 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DC Commerce | Software, E-commerce & Trade Solutions</title>
-    <meta name="description" content="DC Commerce is a UK-based startup specializing in software development, e-commerce solutions, and international import-export services. Let's build something great together." />
-    <meta name="keywords" content="software development, e-commerce, import export, UK startup, web development, mobile apps, international trade" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      * {
-        font-family: 'Inter', sans-serif;
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>DC Commerce | Software, E-commerce & International Trade</title>
+  <meta name="title" content="DC Commerce | Software, E-commerce & International Trade" />
+  <meta name="description"
+    content="DC Commerce develops SaaS products like Tralyz, runs global e-commerce operations with warehousing solutions, and provides international trade consulting. Based in UK & Turkey." />
+  <meta name="keywords"
+    content="DC Commerce, Tralyz, software development, SaaS, e-commerce, international trade, import export, UK, Turkey, warehousing, logistics, trade consulting, Gifty" />
+  <meta name="author" content="DC Commerce" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dccommerce.co.uk/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dccommerce.co.uk/" />
+  <meta property="og:title" content="DC Commerce | Software, E-commerce & International Trade" />
+  <meta property="og:description"
+    content="DC Commerce develops SaaS products like Tralyz, runs global e-commerce operations with warehousing solutions, and provides international trade consulting. Based in UK & Turkey." />
+  <meta property="og:image" content="https://dccommerce.co.uk/assets/logo.png" />
+  <meta property="og:site_name" content="DC Commerce" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://dccommerce.co.uk/" />
+  <meta property="twitter:title" content="DC Commerce | Software, E-commerce & International Trade" />
+  <meta property="twitter:description"
+    content="DC Commerce develops SaaS products like Tralyz, runs global e-commerce operations with warehousing solutions, and provides international trade consulting." />
+  <meta property="twitter:image" content="https://dccommerce.co.uk/assets/logo.png" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DC Commerce",
+      "url": "https://dccommerce.co.uk",
+      "logo": "https://dccommerce.co.uk/assets/logo.png",
+      "description": "DC Commerce develops SaaS products, runs global e-commerce operations, and provides international trade consulting.",
+      "foundingDate": "2025",
+      "location": [
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Abingdon",
+            "addressRegion": "England",
+            "addressCountry": "GB"
+          }
+        },
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "TR"
+          }
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+44-7347-246242",
+        "contactType": "customer service",
+        "email": "hello@dccommerce.co.uk"
+      },
+      "sameAs": [],
+      "knowsAbout": ["Software Development", "SaaS", "E-commerce", "International Trade", "Import Export", "Warehousing", "Logistics"]
+    }
+    </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
       }
-      .fade-in {
-        animation: fadeIn 0.5s ease-out forwards;
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
