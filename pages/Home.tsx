@@ -31,7 +31,7 @@ const Home: React.FC = () => {
               Your Partner in Software, Trade & E-commerce
             </h1>
             <p className="text-xl text-[#5B6C7D] mb-10 leading-relaxed max-w-2xl">
-              We're a young startup helping businesses grow through custom software development, international trade, and e-commerce solutions. Small team, big impact.
+              We're a young startup helping businesses grow through custom software development, international trade, and e-commerce solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button onClick={() => navigate('/contact')}>
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-[#1A2B4A] mb-6">We're Just Getting Started</h2>
               <p className="text-lg text-[#5B6C7D] leading-relaxed mb-8">
-                DC Commerce is a fresh startup based in the UK, driven by passion and expertise. We specialize in software development, import-export operations, and e-commerce solutions. Our small but dedicated team brings agility and innovation to every project.
+                DC Commerce is a fresh startup based in the UK, driven by passion and expertise. We specialize in software development, import-export operations, and e-commerce solutions. Dedicated team brings agility and innovation to every project.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 {STATS.map((stat, index) => (
